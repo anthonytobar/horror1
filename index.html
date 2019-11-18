@@ -1,81 +1,83 @@
 <html>
-
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link href="images/favicon.ico" rel="icon" type="image/x-icon" />
 		<title>Horror -x-</title>
 		<link rel="stylesheet" href="style.css" />
 	</head>
-
 	<body>
 		<div class="row2">
-			<div class="rowbox green"></div>
-			<div class="rowbox red"></div>
+			<div class="rowbox grey center-content">
+			    <input type="button" class="bb" id="bb" onclick="resetAll()" value="Take me Back">
+			</div>
+			<div class="rowbox green center-content">
+				<input type="button" class="bb" id="bb" onclick="checkConfiguration()" value="Can you hear me">
+				<button onclick="myFunction()" class="bb" id="bb"><!--tobar is an idiot-->What do I do?</button>
+			</div>
 		</div>
 		<div class="bigdiv">
 			<div class="meddiv">
 				<div class="col">
-					<div class="box grey center-content restrict-img-size center-img">
-						<img src="images/ghost.jpg" class="restrict-img-size" class="contain-img"/>
+					<div class="box black center-content restrict-img-size center-img" onclick="nextImage(this)">
+						<img src="images/ghost.jpg" class="restrict-img-size contain-img" id="change1"/>
 					</div>
-					<div class="box black center-vertical center-horizontal center-img">
-						<img src="images/screampic.jpg" class="restrict-img-size" class="contain-img"/>
+					<div class="box black center-vertical center-horizontal center-img" onclick="nextImage1(this)">
+						<img src="images/screampic.jpg" class="restrict-img-size contain-img" id="change2"/>
 					</div>
-					<div class="box grey center-vertical center-horizontal center-img">
-						<img src="images/scream3.jpg" class="restrict-img-size" class="contain-img"/>
+					<div class="box black center-vertical center-horizontal center-img" onclick="nextImage2(this)">
+						<img src="images/scream3.jpg" class="restrict-img-size contain-img" id="change3"/>
 					</div>
-					<div class="box black center-vertical center-horizontal center-img">
-						<img src="images/scream.jpg" class="restrict-img-size" class="contain-img"/>
+					<div class="box black center-vertical center-horizontal center-img" onclick="nextImage3(this)">
+						<img src="images/scream.jpg" class="restrict-img-size contain-img" id="change4"/>
 					</div>
 				</div>
 				<div class="col">
-					<div class="box black center-vertical center-horizontal center-img">
-						<img src="images/mouth.jpg" class="restrict-img-size" class="contain-img"/>
+					<div class="box black center-vertical center-horizontal center-img" onclick="nextImage4(this)">
+						<img src="images/mouth.jpg" class="restrict-img-size contain-img" id="change5"/>
 					</div>
-					<div class="box grey center-vertical center-horizontal center-img">
-						<img src="images/smile2.jpg" class="restrict-img-size" class="contain-img"/>
+					<div class="box black center-vertical center-horizontal center-img" onclick="nextImage5(this)">
+						<img src="images/smile2.jpg" class="restrict-img-size contain-img" id="change6"/>
 					</div>
-					<div class="box black center-vertical center-horizontal center-img">
-						<img src="images/smile.jpg"  class="restrict-img-size" class="contain-img"/>
+					<div class="box black center-vertical center-horizontal center-img" onclick="nextImage6(this)">
+						<img src="images/smile.jpg"  class="restrict-img-size contain-img" id="change7"/>
 					</div>
-					<div class="box grey center-vertical center-horizontal center-img">
-						<img src="images/mouthful.jpg" class="restrict-img-size" class="contain-img"/>
+					<div class="box black center-vertical center-horizontal center-img" onclick="nextImage7(this)">
+						<img src="images/mouthful.jpg" class="restrict-img-size contain-img" id="change8"/>
 					</div>
 				</div>
 			</div>
 			<div class="meddiv2">
 				<div class="col2">
-					<div class="box grey center-vertical center-horizontal center-img">
-						<img src="images/12.jpg" class="restrict-img-size" class="contain-img"/>
+					<div class="box black center-vertical center-horizontal center-img" onclick="nextImage8(this)">
+						<img src="images/12.jpg" class="restrict-img-size contain-img" id="change9"/>
 					</div>
-					<div class="box black center-vertical center-horizontal center-img">
-						<img src="images/isgod.jpg" class="restrict-img-size" class="contain-img"/>
+					<div class="box black center-vertical center-horizontal center-img" onclick="nextImage9(this)">
+						<img src="images/isgod.jpg" class="restrict-img-size contain-img" id="change10"/>
 					</div>
-					<div class="box grey center-vertical center-horizontal center-img">
-							<img src="images/friendly.jpg" class="restrict-img-size" class="contain-img"/>
+					<div class="box black center-vertical center-horizontal center-img" onclick="nextImage10(this)">
+							<img src="images/friendly.jpg" class="restrict-img-size contain-img" id="change11"/>
 					</div>
-					<div class="box black center-vertical center-horizontal center-img">
-						<img src="images/friendly.jpg" class="restrict-img-size" class="contain-img"/>
+					<div class="box black center-vertical center-horizontal center-img" onclick="nextImage11(this)">
+						<img src="images/back.jpg" class="restrict-img-size contain-img" id="change12"/>
 					</div>
 				</div>
 				<div class="col">
-					<div class="box black center-vertical center-horizontal center-img">
-						<img src="images/all.jpg" class="restrict-img-size" class="contain-img"/>
+					<div class="box black center-vertical center-horizontal center-img" onclick="nextImage12(this)">
+						<img src="images/all.jpg" class="restrict-img-size contain-img" id="change13"/>
 					</div>
-					<div class="box grey center-vertical center-horizontal center-img">
-						<img src="images/mim.jpg" class="restrict-img-size" class="contain-img"/>			
+					<div class="box black center-vertical center-horizontal center-img" onclick="nextImage13(this)">
+						<img src="images/mim.jpg" class="restrict-img-size contain-img" id="change14"/>			
 					</div>
-					<div class="box black center-vertical center-horizontal center-img">
-						<img src="images/hands.jpg" class="restrict-img-size" class="contain-img"/>				
+					<div class="box black center-vertical center-horizontal center-img" onclick="nextImage14(this)">
+						<img src="images/hands.jpg" class="restrict-img-size contain-img" id="change15"/>				
 					</div>
-					<div class="box grey center-vertical center-horizontal center-img">
-						<img src="images/mime.jpg" class="restrict-img-size" class="contain-img"/>
+					<div class="box black center-vertical center-horizontal center-img" onclick="nextImage15(this)">
+						<img src="images/mime.jpg" class="restrict-img-size contain-img" id="change16"/>
 					</div>
 				</div>	
 			</div>
 		</div>
 		<script src="script.js"></script>
+		<audio src="sounds/laugh.mp3" type="audio/mp3" id="you-died"></audio>
 	</body>
-	
 </html>
