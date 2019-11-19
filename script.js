@@ -23,7 +23,7 @@ var audio1 = document.getElementById("you-died");
 var audio2 = document.getElementById("you-scared");
 
 function myFunction() {
-  alert("All images must be the same to play sound");
+  alert("All images must be the same to play sound, each box has an image that's the same as another");
 }
 
 function nextImage(el){
