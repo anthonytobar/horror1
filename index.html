@@ -9,6 +9,8 @@
 		<div class="row2">
 			<div class="rowbox grey center-content">
 			    <input type="button" class="bb" id="bb" onclick="resetAll()" value="Take me Back">
+				<button onclick="sound(this)" class="bb" type="button">You Scared</button>
+				<audio src="sounds/jack.mp3" type="audio/mp3" id="you-scared"></audio>
 			</div>
 			<div class="rowbox green center-content">
 				<input type="button" class="bb" id="bb" onclick="checkConfiguration()" value="Can you hear me">
@@ -79,5 +81,6 @@
 		</div>
 		<script src="script.js"></script>
 		<audio src="sounds/laugh.mp3" type="audio/mp3" id="you-died"></audio>
+		<audio src="sounds/jack.mp3" type="audio/mp3" id="you-scared"></audio>
 	</body>
 </html>
